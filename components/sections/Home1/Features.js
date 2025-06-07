@@ -254,7 +254,7 @@ function Features() {
 
 
     return (
-        <section id="feature-menu" className="feature-area pb-130">
+        <section id="feature-menu" className="feature-area">
             <div className="feature__wrp">
                 <div className="row g-0">
                     {features.map((feature, index) => (
