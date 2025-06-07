@@ -11,7 +11,7 @@ function ChooseUs() {
     return (
         <>
 
-        <section className="choose-one-area bg-sub pt-130">
+        <section className="choose-one-area bg-sub">
             <div className="row g-0">
                 <div className="col-xl-7 order-2 order-xl-1">
                     <div className="choose-one__wrp">
@@ -324,10 +324,10 @@ function ChooseUs() {
                     </div>
                 </div>
 
-                <div className="col-xl-5 order-1 order-xl-2">
+                <div className="col-xl-5 order-1 order-xl-2 choose-one__image_side">
                     <div className="choose-one__image gsap__parallax">
                     {/*889x832 */}
-                        <img src="assets/images/choose/Choose4.jpg" alt="image" />
+                        <img src="/assets/images/choose/Choose4.jpg" alt="image" />
                         {/* <div className="choose-one__rectangle">
                             <div className="item wow" />
                             <div className="item-dark wow" />
