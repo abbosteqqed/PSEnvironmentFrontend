@@ -6597,10 +6597,7 @@ figure {
     border-bottom: 1px solid var(--border);
   }
 }
-.brand__item:hover img {
-  -webkit-animation: bounceIn 1s forwards;
-          animation: bounceIn 1s forwards;
-}
+
 
 .brand-two-area {
   overflow: hidden;
