@@ -231,7 +231,7 @@ function Features() {
             <i className="fa-solid fa-vials fa-3x" style={{ color: "#0ea5e9" }}></i>
         ),
         title: "Lab Testing Services",
-        link: "//page-service-details",
+        link: "/page-service-details",
         description: "Advanced testing to detect problems with filter bags"
     },
     {
