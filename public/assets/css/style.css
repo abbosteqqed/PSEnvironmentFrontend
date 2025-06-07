@@ -8882,6 +8882,16 @@ figure {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.contact-area .row{
+	padding: 0px;
+	gap: 0px;
+}
+
+.contact-area .row .col-lg-6{
+	padding: 0px;
+	gap: 0px;
+}
 .contact__wrp {
 	max-width: 1085px;
 	float: right;
