@@ -15452,6 +15452,7 @@ figure {
 .work-ten__item .content .title {
 	margin-top: 30px;
 	margin-bottom: 10px;
+	font-size: 18px;
 }
 .work-ten__item:hover .image::after {
 	opacity: 1;
