@@ -137,84 +137,90 @@ function Faq() {
     };
 
     return (
-        <section className="faq-section pt-130 pb-100">
-            <div className="container">
-                <div className="row align-items-center">
-                    {/* Left Image */}
-                    <div className="col-lg-6">
-                        <div className="faq-image text-center mb-4 mb-lg-0">
-                            <img
-                                className="img-fluid rounded shadow animation__arryLeftRight"
-                                src="/assets/images/faq/faq4.png"
-                                alt="FAQ Visual"
-                            />
-                        </div>
-                    </div>
+			<section className="faq-section pt-130 pb-100">
+				<div className="container">
+					<div className="row">
+						{/* Left Image */}
+						<div className="col-lg-6">
+							<div className="faq-image text-center mb-4 mb-lg-0">
+								<img
+									className="img-fluid rounded"
+									src="/assets/images/faq/faq4.png"
+									alt="FAQ Visual"
+								/>
+							</div>
+						</div>
 
-                    {/* Right FAQ Content */}
-                    <div className="col-lg-6 d-flex align-items-center">
-                        <div className="faq-content w-100">
-                            <div className="section-header mb-4">
-                                <h6 className="text-primary">To know more about us</h6>
-                                <h2 className="mb-3">Frequently Asked Questions</h2>
-                                <p>
-                                    PS Environmental provides expert services in air pollution control and dust collection systems.
-                                    If you don’t see your question here, feel free to reach out—we’re just an email away!
-                                </p>
-                            </div>
+						{/* Right FAQ Content */}
+						<div className="col-lg-6 d-flex align-items-center">
+							<div className="faq-content w-100">
+								<div className="section-header mb-4">
+									<h6 className="text-primary">To know more about us</h6>
+									<h2 className="mb-3">Frequently Asked Questions</h2>
+									<p>
+										PS Environmental provides expert services in air pollution
+										control and dust collection systems. If you don’t see your
+										question here, feel free to reach out—we’re just an email
+										away!
+									</p>
+								</div>
 
-                            <div className="accordion" id="faqAccordion">
-                                {faqData.map((faq, index) => (
-                                    <div className="accordion-item" key={index}>
-                                        <h2 className="accordion-header">
-                                            <button
-                                                className={`accordion-button ${activeKey === index ? '' : 'collapsed'}`}
-                                                type="button"
-                                                onClick={() => handleToggle(index)}
-                                                aria-expanded={activeKey === index}
-                                            >
-                                                {faq.question}
-                                            </button>
-                                        </h2>
-                                        <div
-                                            className={`accordion-collapse collapse ${activeKey === index ? 'show' : ''}`}
-                                        >
-                                            <div className="accordion-body">
-                                                {faq.answer}
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
+								<div
+									className="accordion"
+									id="faqAccordion">
+									{faqData.map((faq, index) => (
+										<div
+											className="accordion-item"
+											key={index}>
+											<h2 className="accordion-header">
+												<button
+													className={`accordion-button ${
+														activeKey === index ? "collapsed" : ""
+													}`}
+													type="button"
+													onClick={() => handleToggle(index)}
+													aria-expanded={activeKey === index}>
+													{faq.question}
+												</button>
+											</h2>
+											<div
+												className={`accordion-collapse collapse ${
+													activeKey === index ? "show" : ""
+												}`}>
+												<div className="accordion-body">{faq.answer}</div>
+											</div>
+										</div>
+									))}
+								</div>
 
-                            {/* <Link href="/page-faq" className="btn btn-primary mt-4">Browse More</Link> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
+								{/* <Link href="/page-faq" className="btn btn-primary mt-4">Browse More</Link> */}
+							</div>
+						</div>
+					</div>
+				</div>
 
-            {/* Optional: Add custom styling */}
-            <style jsx>{`
-                .faq-section {
-                    background-color: #f9f9f9;
-                }
-                .accordion-button {
-                        font-weight: 600;
-                        background-color: #f9f9f9; /* Set question background */
-                        border: none; /* Optional: remove border if needed */
-                    }
+				{/* Optional: Add custom styling */}
+				<style jsx>{`
+					.faq-section {
+						background-color: #f9f9f9;
+					}
+					.accordion-button {
+						font-weight: 600;
+						background-color: #f9f9f9; /* Set question background */
+						border: none; /* Optional: remove border if needed */
+					}
 
-                    .accordion-button.collapsed {
-                        background-color: #f9f9f9; /* Keep same bg when collapsed */
-                    }
-                .accordion-body {
-                    font-size: 0.95rem;
-                    color: #444;
-                    background-color: #f9f9f9;
-                }
-            `}</style>
-        </section>
-    );
+					.accordion-button.collapsed {
+						background-color: #f9f9f9; /* Keep same bg when collapsed */
+					}
+					.accordion-body {
+						font-size: 0.95rem;
+						color: #444;
+						background-color: #f9f9f9;
+					}
+				`}</style>
+			</section>
+		);
 }
 
 export default Faq;
