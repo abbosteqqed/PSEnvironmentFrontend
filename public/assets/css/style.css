@@ -3968,6 +3968,7 @@ figure {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 130px 0;
+	padding-top: 210px;
 	position: relative;
 	z-index: 1;
 }
@@ -4450,10 +4451,11 @@ figure {
 	display: none;
 }
 .header-area {
-	top: 50px;
-	position: fixed;
+	top: 0px;
+	position: sticky;
 	width: 100%;
 	z-index: 99;
+	margin-bottom: -86px;
 }
 .header-area.header-blur::after {
 	position: absolute;
@@ -4463,9 +4465,8 @@ figure {
 	height: 100%;
 	z-index: -1;
 	content: "";
-	background-color: rgba(255, 255, 255, 0.3098039216);
-	-webkit-backdrop-filter: blur(30px);
-	backdrop-filter: blur(30px);
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(20px);
 }
 .header-area.header-blur .logo-light {
 	display: none;
@@ -5406,7 +5407,7 @@ figure {
 	overflow: hidden;
 }
 
-.banner__cover{
+.banner__cover {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -12638,6 +12639,14 @@ figure {
 .service-three-area {
 	overflow: hidden;
 }
+
+.service-three-area .icon-img{
+	height: 36px;
+	width: 36px;
+}
+
+
+
 .service-three__item {
 	padding: 20px 30px;
 	border: 1px solid var(--border);

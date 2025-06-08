@@ -1,7 +1,6 @@
 // import React from 'react';
 // import Link from 'next/link';
 
-
 // function ServiceGrid() {
 //     return (
 //         <>
@@ -10,7 +9,7 @@
 //             <div className="container">
 //                 <div className="row g-4">
 //                     <h2 >Air Pollution Control & Baghouse Services</h2>
-                    
+
 //                     <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
 //                         <Link href="/page-service-details" className="service-three__item">
 //                             <div className="icon">
@@ -32,7 +31,7 @@
 //                                         d="M30.0005 35.5526C29.6951 35.5526 29.4551 35.3126 29.4551 35.0071C29.4551 34.7016 29.6951 34.4616 30.0005 34.4616C32.466 34.4616 34.4623 32.4653 34.4623 30.0107C34.4623 27.5453 32.466 25.5489 30.0114 25.5489C29.706 25.5489 29.466 25.3089 29.466 25.0035C29.466 24.698 29.706 24.458 30.0114 24.458C33.0769 24.458 35.5641 26.9453 35.5641 29.9998C35.5532 33.0653 33.066 35.5526 30.0005 35.5526Z"
 //                                         fill="#4B535D" />
 //                                 </svg>
-                                
+
 //                             </div>
 //                             <h4>Baghouse Conversions</h4>
 //                         </Link>
@@ -235,160 +234,176 @@
 // }
 // export default ServiceGrid;
 
-
-
-
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
+import {
+	RefreshCw,
+	ClipboardCheck,
+	FileCodeIcon as FileContract,
+	Calendar,
+	HelpCircle,
+	ClipboardList,
+	Wrench,
+	PackageOpen,
+	FlaskRoundIcon as Flask,
+	Shield,
+	Repeat,
+} from "lucide-react";
 
 function ServiceGrid() {
-    return (
-        <>
-        <section className="service-three-area pt-130 pb-20">
-            <div className="container">
-                <div className="row g-4">
-                    <h2>Air Pollution Control & Baghouse Services</h2>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                                </svg>
-                            </div>
-                            <h4>Baghouse Conversions</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item ">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <h4>Engineering Evaluations</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="16" y1="13" x2="8" y2="13"/>
-                                    <line x1="16" y1="17" x2="8" y2="17"/>
-                                    <polyline points="10 9 9 9 8 9"/>
-                                </svg>
-                            </div>
-                            <h4>Master Service Contracts</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M12 8v4l3 3"/>
-                                </svg>
-                            </div>
-                            <h4>Preventive Maintenance Plans</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
-                                    <line x1="16" y1="8" x2="2" y2="22"/>
-                                    <line x1="17" y1="15" x2="9" y2="15"/>
-                                </svg>
-                            </div>
-                            <h4>Troubleshooting</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
-                                    <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
-                                </svg>
-                            </div>
-                            <h4>Inspections & Reports</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                                </svg>
-                            </div>
-                            <h4>Maintenance Repairs</h4>
-                        </Link>
-                    </div>
-                    
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="700ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
-                                </svg>
-                            </div>
-                            <h4>Filter Bag Changeovers</h4>
-                        </Link>
-                    </div>
+	const getIcon1 = (index) => {
+		const icons = [
+			<RefreshCw
+				key={0}
+				className="icon-img"
+			/>,
+			<ClipboardCheck
+				key={1}
+				className="icon-img"
+			/>,
+			<FileContract
+				key={2}
+				className="icon-img"
+			/>,
+			<Calendar
+				key={3}
+				className="icon-img"
+			/>,
+			<HelpCircle
+				key={4}
+				className="icon-img"
+			/>,
+			<ClipboardList
+				key={5}
+				className="icon-img"
+			/>,
+			<Wrench
+				key={6}
+				className="icon-img"
+			/>,
+			<PackageOpen
+				key={7}
+				className="icon-img"
+			/>,
+			<Flask
+				key={8}
+				className="icon-img"
+			/>,
+			<Shield
+				key={9}
+				className="icon-img"
+			/>,
+			<Repeat
+				key={10}
+				className="icon-img"
+			/>,
+		];
 
-                    <h2>Others</h2>
+		return icons[index] || <RefreshCw />;
+	};
+	const getIcon2 = (index) => {
+		const icons = [
+			<Flask
+				key={0}
+				className="icon-img"
+			/>,
+			<Shield
+				key={1}
+				className="icon-img"
+			/>,
+			<Repeat
+				key={2}
+				className="icon-img"
+			/>,
+		];
 
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <line x1="12" y1="8" x2="12" y2="12"/>
-                                    <line x1="12" y1="16" x2="12.01" y2="16"/>
-                                </svg>
-                            </div>
-                            <h4>Lab Testing Services</h4>
-                        </Link>
-                    </div>
+		return icons[index] || <RefreshCw />;
+	};
+	return (
+		<>
+			<section className="service-three-area pt-130 pb-20">
+				<div className="container">
+					<div className="row g-4">
+						<h2>Air Pollution Control & Baghouse Services</h2>
 
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="900ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22 4 12 14.01 9 11.01"/>
-                                </svg>
-                            </div>
-                            <h4>Certified by OSHA & MSHA</h4>
-                        </Link>
-                    </div>
+						<div className="row g-4">
+							{SERVICES1.map((item, index) => (
+								<div
+									key={item}
+									className="col-md-6 col-xl-3 wow fadeInUp"
+									data-wow-delay="800ms"
+									data-wow-duration="1500ms">
+									<Link
+										href="/page-service-details"
+										className="service-three__item">
+										<div className="icon">{getIcon1(index)}</div>
+										<h4>{item.title}</h4>
+									</Link>
+								</div>
+							))}
+						</div>
 
-                    <div className="col-md-6 col-xl-3 wow fadeInUp" data-wow-delay="1000ms" data-wow-duration="1500ms">
-                        <Link href="/page-service-details" className="service-three__item">
-                            <div className="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4B535D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-                                    <line x1="12" y1="9" x2="12" y2="13"/>
-                                    <line x1="12" y1="17" x2="12.01" y2="17"/>
-                                </svg>
-                            </div>
-                            <h4>Filter Bag Change-Outs & Troubleshooting</h4>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </section>
-        </>
-    )
+						<h2>Others</h2>
+						<div className="row g-4">
+							{SERVICES2.map((item, index) => (
+								<div
+									key={item}
+									className="col-md-6 col-xl-3 wow fadeInUp"
+									data-wow-delay="800ms"
+									data-wow-duration="1500ms">
+									<Link
+										href="/page-service-details"
+										className="service-three__item">
+										<div className="icon">{getIcon2(index)}</div>
+										<h4>{item.title}</h4>
+									</Link>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+		</>
+	);
 }
+
+const SERVICES1 = [
+	{
+		title: "Baghouse Conversions",
+	},
+	{
+		title: "Engineering Evaluations",
+	},
+	{
+		title: "Master Service Contracts",
+	},
+	{
+		title: "Preventive Maintenance Plans",
+	},
+	{
+		title: "Troubleshooting",
+	},
+	{
+		title: "Inspections & Reports",
+	},
+	{
+		title: "Maintenance Repairs",
+	},
+	{
+		title: "Filter Bag Changeovers",
+	},
+];
+
+const SERVICES2 = [
+	{
+		title: "Lab Testing Services",
+	},
+	{
+		title: "Certified by OSHA & MSHA",
+	},
+	{
+		title: "Filter Bag Change-Outs & Troubleshooting",
+	},
+];
 
 export default ServiceGrid;

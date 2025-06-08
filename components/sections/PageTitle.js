@@ -4,19 +4,6 @@ import React from "react";
 const PageTitle = (props) => {
 	return (
 		<>
-			<div className="breadcrumb-container">
-				<div className="container">
-					<ul>
-						<li>
-							<Link href="/">Home</Link>
-						</li>
-						<li>
-							<i className="fa-light fa-angle-right"></i>
-						</li>
-						<li className="active_page">{props.pageName}</li>
-					</ul>
-				</div>
-			</div>
 			<section
 				className="breadcrumb-area"
 				style={{ backgroundImage: "url(assets/images/banner/banner1.jpg)" }}>
@@ -28,6 +15,20 @@ const PageTitle = (props) => {
 					</div>
 				</div>
 			</section>
+
+			{/* <div className="breadcrumb-container">
+				<div className="container">
+					<ul>
+						<li>
+							<Link href="/">Home</Link>
+						</li>
+						<li>
+							<i className="fa-light fa-angle-right"></i>
+						</li>
+						<li className="active_page">{props.pageName}</li>
+					</ul>
+				</div>
+			</div> */}
 		</>
 	);
 };

@@ -7,7 +7,7 @@ export default function ServiceGridPage() {
 
     return (
         <>
-            <Layout HeaderStyle="three">
+            <Layout>
                 <PageTitle pageName="Services" />
                 <ServiceGrid />
                 <Brand />
