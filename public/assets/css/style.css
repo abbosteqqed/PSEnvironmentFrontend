@@ -4560,9 +4560,9 @@ figure {
 	-webkit-backdrop-filter: blur(0px);
 	backdrop-filter: blur(0px);
 }
-.header-area.menu-fixed.header-blur .logo-main {
+/* .header-area.menu-fixed.header-blur .logo-main {
 	display: none;
-}
+} */
 .header-area.menu-fixed.header-blur .logo-light {
 	display: block;
 }
