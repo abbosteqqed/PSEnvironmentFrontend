@@ -3982,11 +3982,7 @@ figure {
 	content: "";
 	z-index: -1;
 }
-@media (max-width: 767px) {
-	.breadcrumb-area {
-		padding: 60px 0;
-	}
-}
+
 .breadcrumb__item {
 	text-align: center;
 }
@@ -17182,7 +17178,7 @@ figure {
 
 .lux-card__content h2 {
 	font-size: 2rem;
-	color: #00695c;
+	color: rgb(30, 144, 255);
 	font-weight: 700;
 	margin-bottom: 20px;
 }
@@ -17198,12 +17194,20 @@ figure {
 	padding-left: 0;
 }
 
+.lux-card__content .features-icon{
+	height: 16px;
+	width: 16px;
+	min-width: 16px;
+	color: rgb(30, 144, 255);
+}
+
 .lux-card__content .features li {
 	font-size: 1.1rem;
 	margin-bottom: 15px;
 	color: #444;
 	display: flex;
 	align-items: center;
+	gap: 8px;
 }
 
 .lux-card__content .features i {

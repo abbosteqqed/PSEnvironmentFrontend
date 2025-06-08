@@ -1,6 +1,7 @@
-import Link from 'next/link';
-import React from 'react';
-import Accordion from '../elements/Accordion';
+import Link from "next/link";
+import React from "react";
+import Accordion from "../elements/Accordion";
+import { ArrowRightLeft, Cpu, Settings, TrendingUp, Wind } from "lucide-react";
 
 // const serviceListData = [
 // 	{
@@ -47,25 +48,31 @@ const serviceListData = [
 	{ title: "Filter Bag Changeovers", linkurl: "#filter-bag-changeovers" },
 ];
 
-function ServiceDetails (){
+function ServiceDetails() {
 	return (
 		<>
-
-		<section className="services-details position-relative overflow-hidden pt-120 pb-120">
-			<div className="container-lg">
-				<div className="offer__wrp">
-					<div className="row">
-						<div className="col-xl-4 col-lg-4">
-							<div className="service-sidebar">
-								<div className="sidebar-widget service-sidebar-single">
-									<div className="sidebar-service-list">										
-										<ul>
-											{serviceListData.map((eachitem, servicelist) => (
-												<li key={servicelist}><Link className={(servicelist === 0) ? 'current': ''} href={eachitem.linkurl}><i className="fas fa-angle-right" /><span>{eachitem.title}</span></Link></li>
-											))}
-										</ul>
-									</div>
-									{/* <div className="service-details-help">
+			<section className="services-details position-relative overflow-hidden pt-120 pb-120">
+				<div className="container-lg">
+					<div className="offer__wrp">
+						<div className="row">
+							<div className="col-xl-4 col-lg-4 gap-4 order-lg-1 order-2 mt-lg-0 mt-4">
+								<div className="service-sidebar">
+									<div className="sidebar-widget service-sidebar-single">
+										<div className="sidebar-service-list">
+											<ul>
+												{serviceListData.map((eachitem, servicelist) => (
+													<li key={servicelist}>
+														<Link
+															className={servicelist === 0 ? "current" : ""}
+															href={eachitem.linkurl}>
+															<i className="fas fa-angle-right" />
+															<span>{eachitem.title}</span>
+														</Link>
+													</li>
+												))}
+											</ul>
+										</div>
+										{/* <div className="service-details-help">
 										<div className="help-shape-1" />
 										<div className="help-shape-2" />
 										<h2 className="help-title">Contact with <br /> us for any <br /> advice</h2>
@@ -77,15 +84,15 @@ function ServiceDetails (){
 											<Link href="/">(310) 373-6259</Link>
 										</div>
 									</div> */}
-									{/* <div className="sidebar-widget service-sidebar-single mt-4">
+										{/* <div className="sidebar-widget service-sidebar-single mt-4">
                                         <div className="service-sidebar-single-btn wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1200m">
                                             <Link href="/" className="theme-btn btn-one d-flex align-items-center"><span className="fas fa-file-pdf opacity-100" /> download pdf file</Link>
                                         </div>
                                     </div> */}
+									</div>
 								</div>
 							</div>
-						</div>
-						{/* <div className="col-xl-8 col-lg-8">
+							{/* <div className="col-xl-8 col-lg-8">
 							<div className="services-details__content position-relative overflow-hidden px-3">
 								<img className="w-100" src="assets/images/service/service1.jpg" alt="" />
 								<div style={{ color: 'black' }}>
@@ -131,36 +138,57 @@ function ServiceDetails (){
 							</div> 
 						</div>*/}
 
-						<div className="col-xl-8 col-lg-8">
-						<div className="lux-card">
-							<div className="lux-card__image">
-							<img className="w-100" src="assets/images/service/service1.jpg" alt="Baghouse Conversions" />
-							</div>
+							<div className="col-xl-8 col-lg-8 order-md-1">
+								<div className="lux-card">
+									<div className="lux-card__image">
+										<img
+											className="w-100"
+											src="assets/images/service/service1.jpg"
+											alt="Baghouse Conversions"
+										/>
+									</div>
 
-							<div className="lux-card__content">
-							<h2 id="baghouse-conversions">Baghouse Conversions</h2>
-							<p className="intro">
-								Upgrade outdated baghouse systems to more efficient configurations tailored to current process demands, regulations, or air quality goals.
-							</p>
+									<div className="lux-card__content">
+										<h2 id="baghouse-conversions">Baghouse Conversions</h2>
+										<p className="intro">
+											Upgrade outdated baghouse systems to more efficient
+											configurations tailored to current process demands,
+											regulations, or air quality goals.
+										</p>
 
-							<ul className="features">
-								<li><i className="fas fa-sync-alt"></i> Conversion of mechanical shaker or reverse air systems to pulse-jet</li>
-								<li><i className="fas fa-filter"></i> Retrofitting cartridge-style units or pleated filter bag solutions</li>
-								<li><i className="fas fa-wind"></i> Air-to-cloth ratio optimization</li>
-								<li><i className="fas fa-fan"></i> Fan sizing and ductwork modifications</li>
-								<li><i className="fas fa-microchip"></i> Control system upgrades (e.g., VFD integration, automated differential pressure control)</li>
-							</ul>
+										<ul className="features">
+											<li>
+												<ArrowRightLeft className="features-icon" /> Conversion
+												of mechanical shaker or reverse air systems to pulse-jet
+											</li>
+											<li>
+												<Settings className="features-icon" />{" "}
+												Retrofitting cartridge-style units or pleated filter bag
+												solutions
+											</li>
+											<li>
+												<TrendingUp className="features-icon" />{" "}
+												Air-to-cloth ratio optimization
+											</li>
+											<li>
+												<Wind className="features-icon" /> Fan
+												sizing and ductwork modifications
+											</li>
+											<li>
+												<Cpu className="features-icon" /> Control
+												system upgrades (e.g., VFD integration, automated
+												differential pressure control)
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
-						</div>
-
 					</div>
 				</div>
-			</div>
-		</section>
-		
+			</section>
 		</>
 	);
-};
+}
 
 export default ServiceDetails;
