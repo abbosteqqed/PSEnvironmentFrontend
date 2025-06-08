@@ -10,7 +10,7 @@ const AccordionItem = ({ title, number, content, imageSrc, delay, isActive, onCl
     <div className="head">
       <h3 className="head-title">
         <span className="title">{title}</span>
-        <span className="number" style={{ color: '#64a6c7' }}>{number}</span>
+        <span className="number" style={{ color: '#fff' }}>{number}</span>
       </h3>
     </div>
     {isActive && (

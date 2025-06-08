@@ -10902,6 +10902,12 @@ figure {
 	margin-left: 180px;
 	position: relative;
 	z-index: 1;
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	transition: all 500ms linear;
+}
+
+.hzAccordion__item.active .content {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .hzAccordion__item .content .image {
 	height: 100%;
@@ -10909,6 +10915,8 @@ figure {
 }
 .hzAccordion__item .content .image img {
 	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 .hzAccordion__item .content .wrp {
 	display: -webkit-box;
