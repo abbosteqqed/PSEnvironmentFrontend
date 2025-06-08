@@ -15626,20 +15626,7 @@ figure {
 		flex-wrap: wrap;
 	}
 }
-.footer__wrp::after {
-	bottom: 0;
-	left: 23%;
-	width: 1px;
-	height: 82%;
-	background-color: rgba(255, 255, 255, 0.1019607843);
-	position: absolute;
-	content: "";
-}
-@media (max-width: 1199px) {
-	.footer__wrp::after {
-		display: none;
-	}
-}
+
 .footer__item,
 .footer__item-last {
 	width: 190px;
