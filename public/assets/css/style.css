@@ -3942,6 +3942,26 @@ figure {
 	border: 1px solid transparent;
 }
 
+.breadcrumb-container{
+	background-color: #fff;
+	border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+.breadcrumb-container ul{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 0px;
+}
+
+.breadcrumb-container a:hover{
+	color: rgba(var(--bs-primary-rgb));
+}
+
+.breadcrumb-container .active_page{
+	font-weight: 600;
+}
+
 .breadcrumb-area {
 	overflow: hidden;
 	background-position: center;
@@ -3973,7 +3993,7 @@ figure {
 	margin-bottom: 20px;
 	color: var(--white);
 }
-.breadcrumb__item ul {
+/* .breadcrumb__item ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -3994,7 +4014,7 @@ figure {
 }
 .breadcrumb__item ul li a:hover {
 	letter-spacing: 2px;
-}
+} */
 
 .progress-area .progress {
 	background-color: var(--border);
