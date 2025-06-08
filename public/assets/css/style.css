@@ -15736,6 +15736,12 @@ figure {
 .footer__right {
 	width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+	.footer__right{
+		width: 100%;
+	}
+}
 .footer__copyright {
 	text-align: center;
 	padding: 25px 0;
