@@ -330,7 +330,7 @@ function ServiceGrid() {
 							{SERVICES1.map((item, index) => (
 								<div
 									key={item}
-									className="col-md-6 col-xl-3 wow fadeInUp"
+									className="col-xl-6 col-xxl-3 wow fadeInUp"
 									data-wow-delay="800ms"
 									data-wow-duration="1500ms">
 									<Link
@@ -348,7 +348,7 @@ function ServiceGrid() {
 							{SERVICES2.map((item, index) => (
 								<div
 									key={item}
-									className="col-md-6 col-xl-3 wow fadeInUp"
+									className="col-xl-6 col-xxl-3 wow fadeInUp"
 									data-wow-delay="800ms"
 									data-wow-duration="1500ms">
 									<Link
