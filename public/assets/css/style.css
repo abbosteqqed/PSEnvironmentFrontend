@@ -3942,23 +3942,23 @@ figure {
 	border: 1px solid transparent;
 }
 
-.breadcrumb-container{
+.breadcrumb-container {
 	background-color: #fff;
-	border-top: 1px solid rgba(0,0,0,0.10);
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.breadcrumb-container ul{
+.breadcrumb-container ul {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	padding: 12px 0px;
 }
 
-.breadcrumb-container a:hover{
+.breadcrumb-container a:hover {
 	color: rgba(var(--bs-primary-rgb));
 }
 
-.breadcrumb-container .active_page{
+.breadcrumb-container .active_page {
 	font-weight: 600;
 }
 
@@ -4511,6 +4511,18 @@ figure {
 	font-size: 18px;
 	color: white;
 	margin-left: 5px;
+}
+
+@media screen and (max-width: 576px) {
+	.company-name {
+		display: none;
+	}
+
+	.logo-and-name img {
+		height: 50px;
+		width: 50px;
+		min-width: 50px;
+	}
 }
 
 .company-name-footer {
@@ -5362,13 +5374,11 @@ figure {
 @media (max-width: 991px) {
 	.banner__wrp {
 		padding: 0px;
-
 	}
 }
 @media (max-width: 575px) {
 	.banner__wrp {
 		padding: 0px;
-
 	}
 }
 /* .banner__wrp .parallax-bg {
@@ -8903,12 +8913,12 @@ figure {
 	background-size: cover;
 }
 
-.contact-area .row{
+.contact-area .row {
 	padding: 0px;
 	gap: 0px;
 }
 
-.contact-area .row .col-lg-6{
+.contact-area .row .col-lg-6 {
 	padding: 0px;
 	gap: 0px;
 }
