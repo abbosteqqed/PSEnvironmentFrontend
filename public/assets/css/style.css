@@ -8798,6 +8798,7 @@ figure {
 .consult-left {
 	padding: 130px 120px;
 	background-color: var(--sub-bg);
+	height: 100%;
 }
 @media (max-width: 1600px) {
 	.consult-left {
